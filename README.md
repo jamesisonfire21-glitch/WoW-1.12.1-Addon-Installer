@@ -23,7 +23,26 @@ A command-line tool for installing and updating World of Warcraft 1.12.1 (Vanill
 - Python 3.8+
 - Windows, macOS, or Linux
 
-**Windows only — install curses support:**
+### Installing Python
+
+**Windows:**
+1. Go to [python.org/downloads](https://www.python.org/downloads/) and download the latest Python 3 installer
+2. Run the installer — **make sure to tick "Add Python to PATH"** before clicking Install
+3. Open a Command Prompt and run `python --version` to confirm it worked
+
+**macOS:**
+1. Go to [python.org/downloads](https://www.python.org/downloads/) and download the latest Python 3 installer, or install via Homebrew: `brew install python`
+2. Run `python3 --version` in Terminal to confirm
+
+**Linux:**
+```
+sudo apt install python3 python3-pip   # Debian/Ubuntu
+sudo dnf install python3               # Fedora
+```
+
+### Windows — install curses support
+
+After installing Python, open a Command Prompt and run:
 
 ```
 pip install windows-curses
